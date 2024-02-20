@@ -48,8 +48,7 @@ public class Main {
 	}
 	public static void displayWords(HashMap map) {
 		Iterator<MapEntry> mapIterator = map.iterator();
-		//while(mapIterator.hasNext()) 
-		for(int i=0;i<20;i++){
+		while(mapIterator.hasNext())){
 			System.out.println(mapIterator.next().toString());
 		}
 	}
