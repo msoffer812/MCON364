@@ -1,1 +1,1 @@
-GUI Calculator made with JavaFX
+**GUI Calculator made with JavaFX**
