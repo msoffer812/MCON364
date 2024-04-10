@@ -1,0 +1,57 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/*
+ * Style the pane
+ */
+.calcButton{
+	-fx-background-color: black;
+	-fx-text-fill: white;
+    -fx-border-width: 2px; 
+}
+
+#backdrop{
+	-fx-background-color: black;
+}
+
+#calculatorDisplay{
+	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-border-color: linear-gradient(to bottom, #fe0000, #ff9a3c); 
+    -fx-border-width: 2px; 
+}
+
+.row1{
+	-fx-border-color: linear-gradient(to bottom, #ff9a3c, #fff205); 
+}
+
+.row2{
+	-fx-border-color: linear-gradient(to bottom, #fff205, #7cff01); 
+}
+
+.row3{
+	-fx-border-color: linear-gradient(to bottom, #7cff01, #01fff4); 
+}
+
+.row4{
+	-fx-border-color: linear-gradient(to bottom, #01fff4, #bf00ff); 
+}
+
+.row1:hover{
+	-fx-text-fill: black;
+	-fx-background-color: linear-gradient(to bottom, #ff9a3c, #fff205); 
+}
+
+.row2:hover{
+	-fx-text-fill: black;
+	-fx-background-color: linear-gradient(to bottom, #fff205, #7cff01); 
+}
+
+.row3:hover{
+	-fx-text-fill: black;
+	-fx-background-color: linear-gradient(to bottom, #7cff01, #01fff4); 
+}
+
+.row4:hover{
+	-fx-text-fill: black;
+	-fx-background-color: linear-gradient(to bottom, #01fff4, #bf00ff); 
+}

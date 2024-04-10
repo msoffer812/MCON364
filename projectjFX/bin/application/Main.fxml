@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="backdrop" prefHeight="630.0" prefWidth="460.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CalculatorController">
+   <children>
+      <TextField fx:id="calculatorDisplay" editable="false" layoutX="20.0" layoutY="20.0" prefHeight="150.0" prefWidth="420.0" stylesheets="@application.css" text="0.0">
+         <font>
+            <Font name="Chiller" size="54.0" />
+         </font>
+      </TextField>
+      <Button fx:id="buttonC" layoutX="20.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="C">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row1" />
+         </styleClass>
+      </Button>
+      <Button fx:id="button7" layoutX="20.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="7">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row2" />
+         </styleClass>
+      </Button>
+      <Button fx:id="button0" layoutX="130.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="0">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row1" />
+         </styleClass>
+      </Button>
+      <Button fx:id="buttonEquals" layoutX="240.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="=">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row1" />
+         </styleClass>
+      </Button>
+      <Button fx:id="buttonDivide" layoutX="350.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="/">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row1" />
+         </styleClass>
+      </Button>
+      <Button fx:id="button1" layoutX="20.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="1">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row4" />
+         </styleClass>
+      </Button>
+      <Button fx:id="button4" layoutX="20.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="4">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row3" />
+         </styleClass>
+      </Button>
+      <Button fx:id="button9" layoutX="240.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="9">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row2" />
+         </styleClass>
+      </Button>
+      <Button fx:id="button8" layoutX="130.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="8">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row2" />
+         </styleClass>
+      </Button>
+      <Button fx:id="buttonPlus" layoutX="350.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="+">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row2" />
+         </styleClass>
+      </Button>
+      <Button fx:id="button2" layoutX="130.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="2">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row4" />
+         </styleClass>
+      </Button>
+      <Button fx:id="buttonMinus" layoutX="350.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="-">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row3" />
+         </styleClass>
+      </Button>
+      <Button fx:id="button6" layoutX="240.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="6">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row3" />
+         </styleClass>
+      </Button>
+      <Button fx:id="button5" layoutX="130.0" layoutY="410.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="5">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row3" />
+         </styleClass>
+      </Button>
+      <Button fx:id="buttonMultiply" layoutX="350.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="x">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row4" />
+         </styleClass>
+      </Button>
+      <Button fx:id="button3" layoutX="240.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleButtonClick" prefHeight="90.0" prefWidth="90.0" stylesheets="@application.css" text="3">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <styleClass>
+            <String fx:value="calcButton" />
+            <String fx:value="row4" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>
