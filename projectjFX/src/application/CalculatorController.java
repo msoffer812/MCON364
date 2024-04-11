@@ -70,14 +70,14 @@ public class CalculatorController {
 
     @FXML // fx:id="calculatorDisplay"
     private TextField calculatorDisplay; // Value injected by FXMLLoader
-    boolean canAddOperand;
-	boolean shouldClearScreen;
-	boolean shouldIncludePrevFunction;
-	OperationGroup operations;
-	int indexOfPrev;
-	String prevOperand;
-	NumberWrapper prevNumber; //Holds the reference to the previous number
-	StringBuilder newNum;
+    protected boolean canAddOperand;
+    protected boolean shouldClearScreen;
+    protected boolean shouldIncludePrevFunction;
+    protected OperationGroup operations;
+    protected int indexOfPrev;
+    protected String prevOperand;
+    protected NumberWrapper prevNumber; //Holds the reference to the previous number
+    protected StringBuilder newNum;
     
 	
     @FXML // This method is called by the FXMLLoader when initialization is complete
@@ -104,7 +104,7 @@ public class CalculatorController {
     } 
     
     @FXML
-    public void handleButtonClick(ActionEvent event) {
+    protected void handleButtonClick(ActionEvent event) {
 		/*
 		 * Specifically for when you want to clear the screen after a result
 		 * has been posted. and you want to start a new equation - clear the screen then
@@ -150,14 +150,14 @@ public class CalculatorController {
 	 * Go through the list of operations and calculate a final answer
 	 * @return final calculation
 	 */
-	public double calculateAnswer() {
+    protected double calculateAnswer() {
 		return operations.calculate();
 	}
 	
 	/**
 	 * Reset everything to normal
 	 */
-	public void reset() {
+	protected void reset() {
 		operations = new OperationGroup();
 		indexOfPrev = 0;
 		shouldIncludePrevFunction = false;
@@ -168,7 +168,7 @@ public class CalculatorController {
 		calculatorDisplay.setText("");
 	}
 	
-	public void handleEqualsSignEntering() {
+	protected void handleEqualsSignEntering() {
 		String finalAns = "ERROR";
 		if(canAddOperand) {
 			/*
@@ -196,7 +196,7 @@ public class CalculatorController {
 	 * numbers and operands and adds to the priorityqueue of operations to do at the end
 	 * @param newOperand
 	 */
-	public void handleNewOperand(String newOperand) {
+	protected void handleNewOperand(String newOperand) {
 		canAddOperand = false;
 		double newNum = getValueOfNewNumAndReset();
 		this.operations.addNumber(newNum);
@@ -240,7 +240,7 @@ public class CalculatorController {
 	 * Gets the value of the new number - was a String - then resets it to an empty string and returns
 	 * @return
 	 */
-	public double getValueOfNewNumAndReset() {
+	protected double getValueOfNewNumAndReset() {
 		double num = 0;
 
 		System.out.println(newNum);
@@ -258,7 +258,7 @@ public class CalculatorController {
 	 * Concats text to the end of the display so user knows where they are
 	 * @param text
 	 */
-	public void concatenateText(String text) {
+	protected void concatenateText(String text) {
 		String newDisplay = calculatorDisplay.getText() + text;
 		this.calculatorDisplay.setText(newDisplay);
 	}
